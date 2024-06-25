@@ -1,0 +1,188 @@
+NOTE : most of the syntax used as same as java but semicolon is not used
+
+
+1.always create a main fun , because jvm find main fun to execute the program
+2.we can create variable by two way
+var: can be reassigned
+val: can not be reassigned
+var i:Int=5
+val j:Int=7
+
+3. type of variable
+NOTE: first letter of all var types is capital except boolean
+Byte
+Short
+Int
+Long
+Float
+Double
+Boolean(true,false)
+Char
+String
+
+4.for type conversion
+var i:Int=5
+var j:Int=7
+var result:float=j.toFloat()/i
+
+5. Conditional statement
+same as java
+if(){
+}
+
+else if(){
+}
+
+else{
+}
+
+note: we can use if else as expression
+and value is store in result
+
+    val result= if(x>y){
+        "x is greater than y"
+    }
+    else if (x<y){
+        "x is less than y"
+    }
+    else{
+        "s is equal to y"
+    }
+    println(result)
+
+NOTE:another way
+
+     val result= if(number%2==0) "even" else "odd"
+
+
+6. use of range
+use in keyword with '..'
+if we use .. then upper count is included means 10 included
+but if we use until then upper count is not included means 10 not included
+
+   1.val a=10
+    val result=a in 1..10
+    println(result)
+
+    2.val a=10
+    val result=a in 1 until 10
+    println(result)
+
+7.when statement is used to replace if else
+
+when(var_name_to_be_check){
+value1 -> code
+value2 -> code
+value3 -> code
+else-> code
+}
+
+NOTE: also use as expression
+
+    val result =when(animal){
+
+        "cat" -> "animal is cat"
+        "horse" -> "animal is horse"
+        "dog" ->"animal is dog"
+        else -> "animal not found"
+    }
+    println(result)
+
+
+8. loops
+
+while loop same as java
+
+while(condition){
+code
+increment or decrement operation
+}
+
+do while loop same as java and c
+
+do{
+code
+increment or decrement operation
+}while(condition)
+
+
+for loop
+in for loop we use range,step, and downTo
+
+range -> to provide range ,how many times code should be execute
+step -> to increase the var condition
+downTo -> to decrease the var condition
+
+ for(i in 1..4 step 1){
+          println(i)
+     }
+     for(i in 1 until 4 step 1){
+         println(i)
+    }
+
+     for (i in 10 downTo 1) {
+         println(i)
+     }
+
+
+NOTE: use '$' to print variable between ""
+
+
+9.Function
+it is define outside the main fun and call inside the main fun
+we can pas default argument also when giving the parameter to fun
+SYNTAX
+
+fun fun_name(parameter1,parameter2,.....):returntype
+{
+//code
+return result
+}
+
+//another method
+
+fun add(num1:Int=2,num2:Int):Int=num1+num2
+
+
+10. to store a fun in a varable use
+var fn=::fun_name
+
+concept is in overloading file
+
+11. to create a array
+
+var a=arrayof(value1,value,2....)
+var a=arrayof<data_type>(value1,value,2....)
+
+iterate array
+
+//without index
+
+    for (i in arr)
+       println(i)
+
+//with index
+
+for((i,e) in arr1.withIndex()){
+    println("$i $e")
+}
+
+//to set value in array
+
+arr.set(index,value)
+
+//to get q value
+
+arr.get(index)
+arr[index]
+
+
+
+
+
+
+
+
+
+
+
